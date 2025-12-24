@@ -1,0 +1,36 @@
+﻿@{
+
+    ViewData["Title"] = "Orders";
+
+}
+<div class="page-container">
+    <h2 class="page-title">🛒 Orders Overview</h2>
+    <div class="order-stats">
+        <div class="stat-card">
+            <h3>Today’s Orders</h3>
+            <p>18</p>
+        </div>
+        <div class="stat-card">
+            <h3>Pending Orders</h3>
+            <p>7</p>
+        </div>
+        <div class="stat-card">
+            <h3>Completed Orders</h3>
+            <p>42</p>
+        </div>
+        <div class="stat-card">
+            <h3>Cancelled Orders</h3>
+            <p>3</p>
+        </div>
+    </div>
+    <div class="orders-actions">
+        <a class="btn-primary" asp-controller="StoreManager" asp-action="Orders">
+
+            View All Orders
+        </a>
+        <a class="btn-secondary">
+
+            Export Orders
+        </a>
+    </div>
+</div>
