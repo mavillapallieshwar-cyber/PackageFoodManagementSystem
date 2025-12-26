@@ -30,5 +30,9 @@ namespace PackageFoodManagementSystem.Application.Controllers
         {
             return View();
         }
+        public IActionResult Settings()
+        {
+            return View();
+        }
     }
 }
