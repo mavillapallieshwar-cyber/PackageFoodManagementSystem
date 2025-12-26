@@ -27,5 +27,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=StoreManager}/{action=Home}/{id?}")
+    .WithStaticAssets();
+
 
 app.Run();
